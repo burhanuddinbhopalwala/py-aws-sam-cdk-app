@@ -1,0 +1,5 @@
+[flake8]
+max_line_length = 120
+exclude = .git, __pycache__
+per-file-ignores = src/*, tests/*: E501
+ignore = A003, B902, D100, D105, D300, D401, D403, N801, N807, N815, T001, W503, W504, E800

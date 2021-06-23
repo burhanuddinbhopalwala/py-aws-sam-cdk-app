@@ -1,0 +1,48 @@
+**/.vscode/**
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/settings.json
+!**/.vscode/extensions.json
+
+**/tmp/
+**/venv/
+**/dist/
+**/*.swp
+**/build/
+**/.pytest_cache/
+**/tests/results/**
+**/.ipynb_checkpoints/
+
+.env
+*egg*
+.idea
+*.zip
+*.pyc
+*_cache
+*pycache
+.history
+.DS_Store
+!.gitkeep
+*coverage*
+__pycache__
+results.xml
+Pipfile.lock
+
+# Custom
+*.csv
+*.xlsx
+
+# AWS SAM
+**/*layer*/
+**/.aws-sam/
+template.dev.conf
+template.prod.conf
+serverless-output.*
+
+# AWS CDK
+cdk.out
+.cdk.staging
+
+# temp
+random-123.py
+buildspec.yml
