@@ -28,6 +28,7 @@ def test_default_empty_bank_account(empty_bank_account):
     assert empty_bank_account.balance == 0
 
 
+@pytest.mark.xfail(reason='Enabled now')
 def test_non_empty_bank_account(non_empty_bank_account):
     assert non_empty_bank_account.balance == 100
 
@@ -47,6 +48,8 @@ def test_invalid_deposit_empty_bank_account(empty_bank_account):
         empty_bank_account.deposit(-50)
 
 
+@pytest.mark.bank_account_skipif
+@pytest.mark.skipif(True, reason='Test skipif')
 def test_deposit_non_empty_bank_account(non_empty_bank_account):
     non_empty_bank_account.deposit(150)
     assert non_empty_bank_account.balance == 250
@@ -101,4 +104,8 @@ def test_transactions_non_empty_bank_account(
 
 
 def test_count():
-    assert BankAccount.count == 16  # * Count of all the above fixtures
+    # * Count of all the above fixtures (1 skip + 1 xfail)
+    assert BankAccount.count == 15
+
+# * pytest --markers
+# * pytest --fixtures

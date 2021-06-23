@@ -9,6 +9,7 @@
 **/dist/
 **/*.swp
 **/build/
+**/htmlcov/
 **/.pytest_cache/
 **/tests/results/**
 **/.ipynb_checkpoints/
@@ -24,8 +25,8 @@
 .DS_Store
 !.gitkeep
 *coverage*
+report.xml
 __pycache__
-results.xml
 Pipfile.lock
 
 # Custom

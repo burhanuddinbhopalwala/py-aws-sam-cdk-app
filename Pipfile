@@ -49,7 +49,9 @@ pep8-naming = "==0.9.1"
 pre-commit = "*"
 pytest = "*"
 pytest-cov = "==2.8.1"
+pytest-html = "*"
 pytest-mock = "*"
+pytest-xdist = "*"
 safety = "*"
 
 [requires]
