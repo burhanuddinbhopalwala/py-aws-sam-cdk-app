@@ -24,8 +24,7 @@
 .history
 .DS_Store
 !.gitkeep
-*coverage*
-report.xml
+.coverage
 __pycache__
 Pipfile.lock
 
