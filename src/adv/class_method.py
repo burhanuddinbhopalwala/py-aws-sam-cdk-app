@@ -9,11 +9,13 @@ from datetime import date
 
 
 class Person(object):
-    def __init__(self, age):
+    def __init__(self, age) -> None:
         self.age = age
+        return None
 
-    def display_age(self):
+    def display_age(self) -> None:
         print(f'The age of the person is {self.age}')
+        return None
 
     @classmethod  # * Factory method - returns the enclosed class object.
     def person_from_birthyear(cls, birth_year: int) -> object:
