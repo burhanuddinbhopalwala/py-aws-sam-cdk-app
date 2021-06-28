@@ -28,10 +28,6 @@
 __pycache__
 Pipfile.lock
 
-# Custom
-*.csv
-*.xlsx
-
 # AWS SAM
 **/*layer*/
 **/.aws-sam/
@@ -43,6 +39,11 @@ serverless-output.*
 cdk.out
 .cdk.staging
 
-# temp
+# Custom
+*.csv
+*.xlsx
+*.icloud
+
+# Temp
 random-123.py
 buildspec.yml
