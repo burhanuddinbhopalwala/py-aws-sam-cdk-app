@@ -53,6 +53,7 @@ pytest-html = "*"
 pytest-mock = "*"
 pytest-xdist = "*"
 safety = "*"
+debugpy = "*"
 
 [requires]
 python_version = "3.8"
