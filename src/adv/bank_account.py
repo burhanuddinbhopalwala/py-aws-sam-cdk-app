@@ -31,9 +31,6 @@ class BankAccount(object):
         BankAccount.count += 1
         return None
 
-    def __str__(self) -> str:
-        return 'A BankAccount'
-
     # * Allows some form of data encapsulation (private/public).
 
     @property
@@ -69,6 +66,12 @@ class BankAccount(object):
     @staticmethod  # * Class helper/utility`
     def get_count() -> int:
         return BankAccount.count
+
+    def __repr__(self) -> str:
+        return f'BankAccount(initial_amount={self.balance}, min_amount={self.__min_balance})'
+
+    def __str__(self) -> str:
+        return f'BankAccount with initial_amount {self.name} and min_amount is {self.__min_balance})'
 
     def __del__(self):
         BankAccount.count -= 1
