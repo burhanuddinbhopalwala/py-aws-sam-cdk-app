@@ -22,7 +22,7 @@ class InsufficientAmount(Exception):
 
 
 class BankAccount(object):
-    count = 0  # * Static member - attribute
+    count = 0  # * Static member # Class variable - attribute
 
     def __init__(self, initial_amount=0, min_amount=10) -> None:
         self._balance = initial_amount  # * Public member - attribute

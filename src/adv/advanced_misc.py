@@ -7,7 +7,6 @@
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 # import os
 import logging
-import time
 from collections import Counter
 from functools import reduce
 from itertools import accumulate
@@ -82,26 +81,6 @@ def get_counts(fruits):
 
 fruits = ['apple', 'apple', 'apple', 'watermelon', 'grapes', 'grapes']
 logger.info('## Counter %s', get_counts(fruits))
-
-
-def wrapper(f):
-    """Decorators allows us to follow DRY.
-        Decorators are HOFs which returns the same function with some extra functionalities added.
-
-    Args:
-        f ([type]): [description]
-
-    Returns:
-        [type]: [description]
-    """
-
-    def inner(*args, **kwargs):
-        start = time.time()
-        print('I am a decorator function.')
-        f(*args, **kwargs)
-        print(f'This function took {time.time() - start} secs')
-
-    return inner
 
 
 def find_anagrams(word, list_of_words):

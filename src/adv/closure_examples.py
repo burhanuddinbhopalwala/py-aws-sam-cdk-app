@@ -12,6 +12,7 @@
 #         * The enclosing function must return the nested function.
 #         * The nested function must refer to a argument(s) defined in the enclosing function.
 # """
+from datetime import time
 
 
 def print_message(message):
@@ -33,6 +34,7 @@ another_function()  # Hello
 #     * Decorators!
 #     * Data hiding. Thus, allows us to avoid the use of global values.
 #     * It can also provide an OO solution to the problem (Classes with one function usually).
+#     * It Provides addiitonal capablity [defined inside the wrapper function] to the decorated function. - DRY
 # """
 
 
@@ -55,5 +57,26 @@ def multiplier(n):
     return multiply
 
 
-multiplier_by_5 = multiplier(5)
-multiplier_by_5(7)  # 35
+multiplier_by_hide = multiplier(5)
+multiplier_by_hide(7)  # 35
+
+# Dectorator
+
+
+def wrapper(f):
+    """Decorator wrapper.
+
+    Args:
+        f ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
+
+    def inner(*args, **kwargs):
+        start = time.time()
+        print('I am a decorator function.')
+        f(*args, **kwargs)
+        print(f'This function took {time.time() - start} secs')
+
+    return inner
