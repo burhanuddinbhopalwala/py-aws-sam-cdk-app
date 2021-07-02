@@ -67,6 +67,18 @@ class BankAccount(object):
     def get_count() -> int:
         return BankAccount.COUNT
 
+    # def __dir__(self) -> list:
+    #     class_consts = ['COUNT222']
+    #     private_attrs = ['__min_balance']
+    #     public_attrs = ['_balance']
+    #     class_methods = []
+    #     static_methods = ['get_count']
+    #     private_methods = ['__is_invalid_amount']
+    #     public_methods = ['deposit', 'withdraw']
+    #     class_members = class_consts + private_attrs + public_attrs + \
+    #         class_methods + static_methods + private_methods + public_methods
+    #     return class_members
+
     def __repr__(self) -> str:
         return f'BankAccount(initial_amount={self.balance}, min_amount={self.__min_balance})'
 
