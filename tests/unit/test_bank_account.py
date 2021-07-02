@@ -124,7 +124,7 @@ class TestBankAccount(object):
 
     def test_static_count(self):
         # * count is 2 (2 fixtrues) for this test not yet tear_down
-        assert BankAccount.count == 2
+        assert BankAccount.COUNT == 2
 
 
 # * pytest --markers

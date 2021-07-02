@@ -6,6 +6,7 @@
   "python.autoComplete.addBrackets": true,
   "python.analysis.completeFunctionParens": true,
   "python.pythonPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
+  "python.defaultInterpreterPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,

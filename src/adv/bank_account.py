@@ -22,13 +22,13 @@ class InsufficientAmount(Exception):
 
 
 class BankAccount(object):
-    count = 0  # * Static member # Class variable - attribute
+    COUNT = 0  # * Static member # Class variable - attribute
 
     def __init__(self, initial_amount=0, min_amount=10) -> None:
         self._balance = initial_amount  # * Public member - attribute
         self.__min_balance = min_amount  # * Private member - attribute
 
-        BankAccount.count += 1
+        BankAccount.COUNT += 1
         return None
 
     # * Allows some form of data encapsulation (private/public).
@@ -65,7 +65,7 @@ class BankAccount(object):
 
     @staticmethod  # * Class helper/utility`
     def get_count() -> int:
-        return BankAccount.count
+        return BankAccount.COUNT
 
     def __repr__(self) -> str:
         return f'BankAccount(initial_amount={self.balance}, min_amount={self.__min_balance})'
@@ -74,4 +74,4 @@ class BankAccount(object):
         return f'BankAccount with initial_amount {self.name} and min_amount is {self.__min_balance})'
 
     def __del__(self):
-        BankAccount.count -= 1
+        BankAccount.COUNT -= 1
