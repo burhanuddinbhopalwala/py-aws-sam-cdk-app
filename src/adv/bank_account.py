@@ -68,7 +68,7 @@ class BankAccount(object):
         return BankAccount.COUNT
 
     # def __dir__(self) -> list:
-    #     class_consts = ['COUNT222']
+    #     class_consts = ['COUNT']
     #     private_attrs = ['__min_balance']
     #     public_attrs = ['_balance']
     #     class_methods = []
