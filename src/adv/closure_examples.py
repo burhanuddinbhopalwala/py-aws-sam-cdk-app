@@ -10,7 +10,7 @@
 #     * There are 3 things that we need in order to have a closure:
 #         * We must have a nested function.
 #         * The enclosing function must return the nested function.
-#         * The nested function must refer to a argument(s) defined in the enclosing function.
+#         * The nested function must refer (read-only) to a parameter(s) defined in the enclosing function.
 # """
 from datetime import time
 
