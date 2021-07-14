@@ -23,8 +23,9 @@
 *pycache
 .history
 .DS_Store
-!.gitkeep
 .coverage
+!.gitkeep
+.gitconfig
 __pycache__
 Pipfile.lock
 
