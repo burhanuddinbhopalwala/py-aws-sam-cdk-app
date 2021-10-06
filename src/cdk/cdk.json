@@ -1,7 +1,7 @@
 {
-    "app": "python app.py",
-    "context":{
-        "project_name": "serverless",
-        "env": "dev"
-    }
+  "app": "python app.py",
+  "context": {
+    "project_name": "serverless",
+    "env": "dev"
+  }
 }

@@ -11,7 +11,7 @@
 **/build/
 **/htmlcov/
 **/.pytest_cache/
-**/tests/results/**
+**/tests/results/
 **/.ipynb_checkpoints/
 
 .env

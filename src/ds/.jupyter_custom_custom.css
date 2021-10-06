@@ -1,24 +1,24 @@
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
-    font-size: 16px !important;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-size: 16px !important;
 }
 
 .CodeMirror pre {
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
-    font-size: 12pt !important;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-size: 12pt !important;
 }
 
 div.text_cell_render {
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
-    font-size: 12pt !important;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-size: 12pt !important;
 }
 
 div.input_area {
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
-    font-size: 12pt !important;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-size: 12pt !important;
 }
 
 div.output_area pre {
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
-    font-size: 12pt !important;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-size: 12pt !important;
 }
