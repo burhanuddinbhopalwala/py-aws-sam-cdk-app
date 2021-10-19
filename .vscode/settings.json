@@ -1,8 +1,12 @@
 {
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
   "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": [
+	  "--experimental",
+	  "--max-line-length", "80"
+  ],
   "python.autoComplete.addBrackets": true,
   "python.analysis.completeFunctionParens": true,
   "python.pythonPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
@@ -11,16 +15,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true
-  },
-  "prettier.resolveGlobalModules": true,
-  "python.envFile": "${workspaceFolder}/envs/prod.env",
-  "[xml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[yml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json5]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "restructuredtext.confPath": ""
 }
