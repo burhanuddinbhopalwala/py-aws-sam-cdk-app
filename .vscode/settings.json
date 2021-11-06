@@ -16,5 +16,6 @@
     "editor.formatOnType": true,
     "editor.formatOnPaste": true
   },
-  "restructuredtext.confPath": ""
+  "restructuredtext.confPath": "",
+  "restructuredtext.languageServer.disabled": false
 }
