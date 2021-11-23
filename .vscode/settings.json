@@ -14,7 +14,8 @@
   "[python]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": ["source.fixAll"]
   },
   "restructuredtext.confPath": "",
   "restructuredtext.languageServer.disabled": false
