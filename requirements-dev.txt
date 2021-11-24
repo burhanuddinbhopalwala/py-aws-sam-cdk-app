@@ -1,5 +1,7 @@
 mock
 moto
+
+ptvsd
 debugpy
 
 flake8
@@ -33,16 +35,26 @@ safety
 
 pre-commit
 
+# pg8000
+# pysqlite3
+# sqlalchemy
+# sqlalchemy-migrate
+# Not considered as DEV
+
+# pandas = "*"
+# boto3 = "==1.14.35"
+
+# s3fs
 # awscli==1.16.292
 # aws-lambda-context
 # aws-sam-cli==0.40.0
-# sqlalchemy-migrate==0.13.0
+# aws_xray_sdk = "==2.6.0"
+# aws-Lambda-powertools = "==1.0.2"
 
 # dask
 # docker
 # sklearn
-# pysqlite3
 
-# amx-common
-# amx-common-dev
+# xyz-common
+# xyz-common-dev
 # A common prod/dev layer
