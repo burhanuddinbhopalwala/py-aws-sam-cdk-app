@@ -1,16 +1,17 @@
+astroid==2.9.0
 attrs==21.2.0
 autopep8==1.6.0
 aws-sam-translator==1.42.0
 backports.entry-points-selectable==1.1.1
 bandit==1.7.1
 bleach==4.1.0
-boto3==1.20.12
-botocore==1.23.12
+boto3==1.20.13
+botocore==1.23.13
 certifi==2021.10.8
 cffi==1.15.0
 cfgv==3.3.1
 cfn-lint==0.56.2
-charset-normalizer==2.0.7
+charset-normalizer==2.0.8
 click==8.0.3
 colorama==0.4.4
 coverage==6.1.2
@@ -41,6 +42,7 @@ identify==2.4.0
 idna==3.3
 importlib-metadata==4.8.2
 iniconfig==1.1.1
+isort==5.10.1
 Jinja2==3.0.3
 jmespath==0.10.0
 jschema-to-python==1.2.3
@@ -49,7 +51,8 @@ jsonpickle==2.0.0
 jsonpointer==2.2
 jsonschema==3.2.0
 junit-xml==1.9
-keyring==23.2.1
+keyring==23.3.0
+lazy-object-proxy==1.6.0
 MarkupSafe==2.0.1
 mccabe==0.6.1
 mock==4.0.3
@@ -70,6 +73,7 @@ pycparser==2.21
 pydocstyle==6.1.1
 pyflakes==2.4.0
 Pygments==2.10.0
+pylint==2.12.1
 pyparsing==3.0.6
 pyrsistent==0.18.0
 pytest==6.2.5
@@ -106,5 +110,6 @@ urllib3==1.26.7
 virtualenv==20.10.0
 webencodings==0.5.1
 Werkzeug==2.0.2
+wrapt==1.13.3
 xmltodict==0.12.0
 zipp==3.6.0

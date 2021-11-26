@@ -1,16 +1,17 @@
 {
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false,
+  "python.linting.pylintEnabled": true,
   "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
     "--experimental",
-    "--max-line-length", "80"
+    "--max-line-length",
+    "80"
   ],
   "python.autoComplete.addBrackets": true,
   "python.analysis.completeFunctionParens": true,
-  "python.pythonPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
-  "python.defaultInterpreterPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
+  "python.pythonPath": "./.venv/bin/python",
+  "python.defaultInterpreterPath": "./.venv/bin/python",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
