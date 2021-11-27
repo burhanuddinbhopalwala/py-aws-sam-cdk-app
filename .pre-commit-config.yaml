@@ -20,7 +20,7 @@ repos:
       - id: trailing-whitespace
       - id: check-merge-conflict
       - id: check-docstring-first
-      - id: requirements-txt-fixer
+      # - id: requirements-txt-fixer
       - id: check-added-large-files
         args: [--maxkb=10000]
       - id: double-quote-string-fixer
