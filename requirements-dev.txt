@@ -1,62 +1,38 @@
-mock
-moto[all]
+mock==4.0.3
+moto[all]==2.2.16
 
-ptvsd
-debugpy
+ptvsd==4.3.2
+debugpy==1.5.1
 
-pylint
-flake8
-flake8-print
-flake8-builtins
-flake8-eradicate
-flake8-breakpoint
-flake8-docstrings
-flake8-blind-except
-flake8-comprehensions
-flake8-logging-format
-flake8-rst-docstrings
-flake8-typing-imports
+flake8==4.0.1
+flake8-blind-except==0.2.0
+flake8-breakpoint==1.1.0
+flake8-builtins==1.5.3
+flake8-comprehensions==3.7.0
+flake8-docstrings==1.6.0
+flake8-eradicate==1.2.0
+flake8-logging-format==0.6.0
+flake8-print==4.0.0
+flake8-rst-docstrings==0.2.3
+flake8-typing-imports==1.11.0
+pylint==2.12.1
 
-cfn-lint
-pep8-naming
+cfn-lint==0.56.2
+pep8-naming==0.12.1
 
-autopep8
-rstcheck
-snooty-lextudio
+autopep8==1.6.0
+rstcheck==3.3.1
+snooty-lextudio==1.11.5
 
-pytest
-pytest-cov
-pytest-html
-pytest-mock
-pytest-xdist
-testfixtures
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-html==3.1.1
+pytest-mock==3.6.1
+pytest-xdist==2.4.0
+testfixtures==6.18.3
 
-twine
-bandit
-safety
+bandit==1.7.1
+safety==1.10.3
+twine==3.6.0
 
-pre-commit
-
-# pg8000
-# pysqlite3
-# sqlalchemy
-# sqlalchemy-migrate
-# Not considered as DEV
-
-# pandas = "*"
-# boto3 = "==1.14.35"
-
-# s3fs
-# awscli==1.16.292
-# aws-lambda-context
-# aws-sam-cli==0.40.0
-# aws_xray_sdk = "==2.6.0"
-# aws-Lambda-powertools = "==1.0.2"
-
-# dask
-# docker
-# sklearn
-
-# xyz-common
-# xyz-common-dev
-# A common prod/dev layer
+pre-commit==2.15.0
