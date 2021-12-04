@@ -56,6 +56,13 @@ next(obj)  # 1, 2, 4, 8, 16
 # ----> 1 next(obj)
 
 # * Generators!
+# * They are a simple way of creating iterators. All the work we have done is handled by generators.
+# * They are easy to implement: we just have to create a function that returns elements with yield instead of return.
+# * They can contain one or more yield statements.
+# * When called, it returns an object (iterator) but does not start execution immediately.
+# * Once the function yields, the function is paused and the control is transferred to the caller.
+# * Local variables and their states are remembered between successive calls.
+
 # * https://github.com/DavidArmendariz/advanced-python-skills-course/blob/master/notebooks/09_generators.ipynb
 # * https://github.com/DavidArmendariz/advanced-python-skills-course/blob/master/solutions/solution_prime_numbers.ipynb
 
