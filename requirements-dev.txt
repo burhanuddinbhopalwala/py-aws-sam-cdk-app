@@ -1,3 +1,6 @@
+conda==4.3.16
+ipython==7.30.1
+
 mock==4.0.3
 moto[all]==2.2.16
 

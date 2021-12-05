@@ -6,25 +6,29 @@
 #
 
 -i https://pypi.org/simple
+appnope==0.1.2; sys_platform == 'darwin'
 astroid==2.9.0; python_version ~= '3.6'
 attrs==21.2.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 autopep8==1.6.0
 aws-sam-translator==1.42.0
+backcall==0.2.0
 backports.entry-points-selectable==1.1.1; python_version >= '2.7'
 bandit==1.7.1
 bleach==4.1.0; python_version >= '3.6'
-boto3==1.20.19
-botocore==1.23.19; python_version >= '3.6'
+boto3==1.19.8
+botocore==1.22.8; python_version >= '3.6'
 certifi==2021.10.8
 cffi==1.15.0
 cfgv==3.3.1; python_full_version >= '3.6.1'
-cfn-lint==0.56.2
-charset-normalizer==2.0.8; python_version >= '3'
+cfn-lint==0.56.3
+charset-normalizer==2.0.9; python_version >= '3'
 click==8.0.3; python_version >= '3.6'
 colorama==0.4.4; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+conda==4.3.16
 coverage[toml]==6.2; python_version >= '3.6'
 cryptography==36.0.0; python_version >= '3.6'
 debugpy==1.5.1
+decorator==5.1.0; python_version >= '3.5'
 distlib==0.3.3
 dnspython==2.1.0
 docopt==0.6.2
@@ -53,7 +57,9 @@ identify==2.4.0; python_full_version >= '3.6.1'
 idna==3.3; python_version >= '3'
 importlib-metadata==4.8.2; python_version >= '3.6'
 iniconfig==1.1.1
+ipython==7.30.1
 isort==5.10.1; python_full_version >= '3.6.1' and python_version < '4'
+jedi==0.18.1; python_version >= '3.6'
 jinja2==3.0.3; python_version >= '3.6'
 jmespath==0.10.0; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'
 jschema-to-python==1.2.3; python_version >= '2.7'
@@ -65,26 +71,33 @@ junit-xml==1.9
 keyring==23.4.0; python_version >= '3.6'
 lazy-object-proxy==1.6.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 markupsafe==2.0.1; python_version >= '3.6'
+matplotlib-inline==0.1.3; python_version >= '3.5'
 mccabe==0.6.1
 mock==4.0.3
 moto==2.2.17
 networkx==2.6.3; python_version >= '3.7'
 nodeenv==1.6.0
 packaging==21.3; python_version >= '3.6'
+parso==0.8.3; python_version >= '3.6'
 pbr==5.8.0; python_version >= '2.6'
 pep8-naming==0.12.1
+pexpect==4.8.0; sys_platform != 'win32'
+pickleshare==0.7.5
 pkginfo==1.8.2
 platformdirs==2.4.0; python_version >= '3.6'
 pluggy==1.0.0; python_version >= '3.6'
 pre-commit==2.16.0
+prompt-toolkit==3.0.23; python_full_version >= '3.6.2'
 ptvsd==4.3.2
+ptyprocess==0.7.0
 py==1.11.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 pycodestyle==2.8.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+pycosat==0.6.3
 pycparser==2.21
 pydocstyle==6.1.1; python_version >= '3.6'
 pyflakes==2.4.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
 pygments==2.10.0; python_version >= '3.5'
-pylint==2.12.1
+pylint==2.12.2
 pymongo[srv,tls]==3.12.2
 pyparsing==3.0.6; python_version >= '3.6'
 pyrsistent==0.18.0; python_version >= '3.6'
@@ -106,6 +119,8 @@ responses==0.16.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 
 restructuredtext-lint==1.3.2
 rfc3986==1.5.0
 rstcheck==3.3.1
+ruamel.yaml.clib==0.2.6; platform_python_implementation == 'CPython' and python_version < '3.10'
+ruamel.yaml==0.17.17; python_version >= '3'
 s3transfer==0.5.0; python_version >= '3.6'
 safety==1.10.3
 sarif-om==1.0.4; python_version >= '2.7'
@@ -119,12 +134,14 @@ testfixtures==6.18.3
 toml==0.10.2; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'
 tomli==1.2.2; python_version >= '3.6'
 tqdm==4.62.3; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+traitlets==5.1.1; python_version >= '3.7'
 twine==3.7.0
 typing-extensions==3.10.0.2
 ujson==1.35; platform_system != 'Windows'
-urllib3==1.26.7; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'
+urllib3==1.26.7; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'
 virtualenv==20.10.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
 watchdog==1.0.2; python_version >= '3.6'
+wcwidth==0.2.5
 webencodings==0.5.1
 werkzeug==2.0.2; python_version >= '3.6'
 wrapt==1.13.3; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
