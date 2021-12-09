@@ -18,7 +18,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.codeActionsOnSave": ["source.fixAll"]
+    "editor.codeActionsOnSave": ["source.fixAll"],
+    "editor.defaultFormatter": "ms-python.python"
   },
   "restructuredtext.confPath": "",
   "restructuredtext.languageServer.disabled": false
