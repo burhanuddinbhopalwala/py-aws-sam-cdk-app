@@ -11,19 +11,42 @@ repos:
     rev: v3.2.0
     hooks:
       - id: check-ast
+      - id: check-xml
+      - id: check-toml
       - id: check-json
       - id: check-yaml
+      - id: check-symlinks
+      - id: name-tests-test
+        args: ['--django']
       - id: debug-statements
+      - id: sort-simple-yaml
       - id: end-of-file-fixer
       - id: mixed-line-ending
         args: [--fix=lf]
-      - id: trailing-whitespace
-      - id: check-merge-conflict
-      - id: check-docstring-first
-      # - id: requirements-txt-fixer
+      - id: pretty-format-json
+        args: [--autofix, --indent=2, --no-ensure-ascii, --no-sort-keys]
+      - id: no-commit-to-branch
+        args: [--branch, staging, --branch, master]
+      - id: check-builtin-literals
       - id: check-added-large-files
         args: [--maxkb=10000]
+      - id: detect-private-key
+      - id: trailing-whitespace
+      - id: fix-encoding-pragma
+        args: [--remove]
+      - id: check-case-conflict
+      - id: file-contents-sorter
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      # - id: destroyed-symlinks
+      - id: check-docstring-first
+      - id: forbid-new-submodules
+      - id: detect-aws-credentials
+      # - id: fix-byte-order-marker
+      # - id: requirements-txt-fixer
       - id: double-quote-string-fixer
+      - id: check-executables-have-shebangs
+      # - id: check-shebang-scripts-are-executable
   - repo: https://gitlab.com/PyCQA/flake8
     rev: 3.8.4
     hooks:

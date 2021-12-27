@@ -50,10 +50,10 @@ class Triangles(object):
 
 
 class Peri(Triangles):
-    
+
     def __init__(self):
-        super().__init__() 
-        
+        super().__init__()
+
     def calculate(self):
         self.pm = 0
         self.pm = self.s1 + self.s2 + self.s3
