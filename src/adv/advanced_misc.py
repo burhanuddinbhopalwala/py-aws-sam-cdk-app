@@ -71,7 +71,7 @@ logger.info('## Transform %s', pformat(transform_invitees(invitees)))
 
 
 def get_counts(fruits):
-    results = dict()
+    results = {}
     counts = Counter(fruits)
     # * Use key, value for kwargs
     for fruit, count in counts.items():

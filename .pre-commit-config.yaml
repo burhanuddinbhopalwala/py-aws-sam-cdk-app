@@ -25,7 +25,7 @@ repos:
       - id: check-yaml
       - id: check-symlinks
       - id: name-tests-test
-        args: ['--django']
+        args: [--django]
       - id: debug-statements
       - id: sort-simple-yaml
       - id: end-of-file-fixer
