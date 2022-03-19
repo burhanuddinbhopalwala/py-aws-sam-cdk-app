@@ -87,3 +87,4 @@ class BankAccount(object):
 
     def __del__(self):
         BankAccount.COUNT -= 1
+        # * NOTE: Python has automatic garbage collector!
