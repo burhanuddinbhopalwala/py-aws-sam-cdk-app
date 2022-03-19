@@ -87,4 +87,5 @@ class BankAccount(object):
 
     def __del__(self):
         BankAccount.COUNT -= 1
-        # * NOTE: Python has automatic garbage collector!
+        # * NOTE: Good to have this method. Python has a automatic garbage collector. 
+        # * When an object is garbage collected this methods, this method gets invokes by Python GC!
