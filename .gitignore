@@ -5,9 +5,8 @@
 !**/.vscode/extensions.json
 
 **/tmp/
-**/venv/
 **/dist/
-**/*.swp
+**/*venv/
 **/build/
 **/htmlcov/
 **/.pytest_cache/
@@ -19,6 +18,7 @@
 .idea
 *.zip
 *.pyc
+*.swp
 *_cache
 *pycache
 .history
