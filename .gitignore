@@ -26,6 +26,7 @@
 .coverage
 !.gitkeep
 .gitconfig
+.env.local
 __pycache__
 Pipfile.lock
 
