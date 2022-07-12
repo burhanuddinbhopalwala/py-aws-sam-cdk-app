@@ -32,12 +32,7 @@ sns_client = boto3.client('sns', region_name=AWS_REGION)
 EXCEPTION_LIST = ['github-ci-cd',
                   'github-deploy',
                   'github-actions',
-                  'github-actions-2',
-                  'keshavpro',
-                  'keshavbookpro',
-                  'keshav@secure.doctorplan.com',
-                  'rohit@secure.doctorplan.com']
-
+                  'github-actions-2']
 
 def lambda_handler(context, event):
     """@desc MFA check lambda handler - main function."""
