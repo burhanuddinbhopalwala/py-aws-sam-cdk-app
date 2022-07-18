@@ -9,6 +9,7 @@
 **/*venv/
 **/build/
 **/htmlcov/
+__pycache__/
 **/.pytest_cache/
 **/tests/results/
 **/.ipynb_checkpoints/
@@ -27,7 +28,8 @@
 !.gitkeep
 .gitconfig
 .env.local
-__pycache__
+*.template
+poetry.toml
 Pipfile.lock
 
 # AWS SAM
@@ -49,3 +51,9 @@ cdk.out
 # Temp
 random-123.py
 buildspec.yml
+
+#python ignore
+
+#coverage files
+.coverage
+code-coverage/
