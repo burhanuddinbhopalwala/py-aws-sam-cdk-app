@@ -2,30 +2,22 @@
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": true,
-  "python.linting.pylintUseMinimalCheckers": true,
-  "python.linting.pylintArgs": [
-    "--max-line-length=160",
-    "--enable=W,E,F"
-  ],
+  "python.linting.pylintArgs": ["--max-line-length=160", "--enable=W,E,F"],
   "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
     "--experimental",
     "--max-line-length",
     "80"
   ],
-  "python.autoComplete.addBrackets": true,
-  "python.analysis.completeFunctionParens": true,
-  "python.pythonPath": "./.venv/bin/python",
-  "python.defaultInterpreterPath": "./.venv/bin/python",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.codeActionsOnSave": [
-      "source.fixAll"
-    ],
+    "editor.codeActionsOnSave": ["source.fixAll"],
     "editor.defaultFormatter": "ms-python.python"
   },
-  "restructuredtext.confPath": "",
-  "restructuredtext.languageServer.disabled": false
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.defaultInterpreterPath": "./.venv/bin/python3"
 }
