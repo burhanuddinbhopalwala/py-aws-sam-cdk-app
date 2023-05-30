@@ -22,10 +22,10 @@ pipenv install # This does NOT install dev dependencies
 pipenv install --dev # This installs dev dependencies
 
 # Generate a requirements.txt file for production dependencies
-pipenv lock -r > requirements.txt 
+pipenv lock -r > requirements-freeze.txt 
 
 # Generate a requirements.txt file for development dependencies
-pipenv lock --dev -r > requirements-dev.txt
+pipenv lock --dev -r > requirements-freeze-dev.txt
 
 # Exit the virtual environment
 exit
